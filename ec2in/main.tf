@@ -11,12 +11,12 @@ resource "aws_instance" "example1"{
         instance_type="t2.large"
         provider=aws.insta1
         tags={
-        Name="master1"
+        Name="master"
         }
 }
 resource "aws_instance" "example2"{
         ami= "ami-04b70fa74e45c3917"
-        instance_type="t2.micro"
+        instance_type="t2.large"
         provider=aws.insta2
         tags={
         Name="worker"
